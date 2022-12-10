@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- swiper-bundle -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Food Fly</title>
+    <link rel="icon" href="imgs/logo.svg" />
+    <!-- End TITLE -->  </head>
+
+  <body>
+    <!-- section header 1 -->
+    <header>
+      <div class="header-content">
+        <div class="container">
+          <img class="nav-logo" src="imgs/logo.svg" alt="" />
+
+          <nav>
+            <ul>
+              <li class="dropdown">
+                <a class="link-item" href="index.html">Home</a>
+              </li>
+              <li class="dropdown">
+                <a class="link-item" href="#"
+                  >Menu <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="dropdown-manu">
+                  <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="menu-item.html">Menu Item</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="link-item" href="#"
+                  >Shop <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="dropdown-manu">
+                  <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="shop-details.html">Shop Details</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a class="link-item" href="#"
+                  >Pages <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <div class="dropdown-manu">
+                  <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="testimonial.html">Testimonial</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="link-item" href="Blog.html">Blog</a></li>
+            </ul>
+          </nav>
+
+          <div class="login">
+            <img class="imgs-menu" src="/imgs/menu-24px.png" alt="" />
+
+            <ul>
+              <li><i class="search fa fa-search fa-lg"></i></li>
+              <li>
+                <i class="shopping icon-cart fa fa-cart-plus fa-lg"></i>Cart (0)
+              </li>
+              <label>Online Order</label>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header (1) -->
+
+    <!-- Start About-Us (2) -->
+    <div class="about-us-text">
+      <h1>Cart</h1>
+      <p>
+        <a href="index.html">Home</a> <span>.</span>
+        <a href="cart.html">Cart</a>
+      </p>
+    </div>
+    <!-- End About-Us (2) -->
+
+    <!-- Start table (3) -->
+    <div class="cart-table">
+      <table class="table container">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="text-center">
+              <div class="cart-card card">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      src="imgs/505.png"
+                      class="cart-img img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Daria Shevtsova</h5>
+                      <p class="card-text">
+                        Tortor at auctor urna nunc cursus. Magna etiam tempor
+                        lobortis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </th>
+            <td class="price-tbody">$10.99</td>
+            <td class="price-tbody">
+              <h5><span> - </span> 01 <span> + </span></h5>
+            </td>
+            <td class="price-tbody">
+              <p><i class="fa-solid fa-xmark"></i> Remove</p>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <div class="cart-card card">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      src="imgs/505.png"
+                      class="cart-img img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Pizza</h5>
+                      <p class="card-text">
+                        Tortor at auctor urna nunc cursus. Magna etiam tempor
+                        lobortis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </th>
+            <td class="price-tbody">$10.99</td>
+            <td class="price-tbody">
+              <h5><span> - </span> 01 <span> + </span></h5>
+            </td>
+            <td class="price-tbody">
+              <p><i class="fa-solid fa-xmark"></i> Remove</p>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              <div class="cart-card card">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img
+                      src="imgs/505.png"
+                      class="cart-img img-fluid rounded-start"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <h5 class="card-title">Martin Widenka</h5>
+                      <p class="card-text">
+                        Tortor at auctor urna nunc cursus. Magna etiam tempor
+                        lobortis
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </th>
+            <td class="price-tbody">$10.99</td>
+            <td class="price-tbody">
+              <h5><span> - </span> 01 <span> + </span></h5>
+            </td>
+            <td class="price-tbody">
+              <p><i class="fa-solid fa-xmark"></i>Remove</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- End table (3) -->
+
+    <!-- Start all-Code (4) -->
+    <div class="all-Code container">
+      <div class="cart-code">
+        <div class="apply-cupon">
+          <button>Coupon Code</button>
+          <button>Apply Cupon</button>
+        </div>
+        <div class="update-cart"><button>Update Cart</button></div>
+      </div>
+    </div>
+    <!-- End all-Code (4) -->
+
+    <!-- Start all-cart-total (5) -->
+    <div class="cart-total-detels">
+      <div class="all-cart-total container">
+        <div class="cart-total">
+          <h3>Cart Total</h3>
+          <div class="su-total">
+            <p>Sub Total</p>
+            <small>$120.00</small>
+          </div>
+          <hr />
+          <div class="total-cart">
+            <p>Total</p>
+            <small>$120.00</small>
+          </div>
+          <hr />
+          <div class="checkout-cart"><button>Proceed To Checkout</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- End all-cart-total (5) -->
+
+    <!-- Start footer (5) -->
+    <div class="footerr">
+      <div class="container m-auto">
+        <div class="footer-head pt-2 pb-2">
+          <img src="/imgs/logo2.svg" alt="" />
+          <div class="footer-help">
+            <h5><a href="#">Help</a></h5>
+            <h5><a href="#">FAQS</a></h5>
+            <div class="footer-call">
+              <i class="fas fa-phone-volume fa-fw"></i>
+              <div class="info">
+                <span>Call Us</span>
+                <span>(00) 123 456 789</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-0 container m-auto pt-5">
+        <div class="col-lg-3 col-md-6 p-3">
+          <div class="box">
+            <h3 class="pb-2">Our Menu</h3>
+            <div class="line">
+              <div class="info"><a href="#">About Us</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Menu</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Testimonial</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Blog</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Contact Us</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 p-3">
+          <div class="box">
+            <h3 class="pb-2">Our Foods</h3>
+            <div class="line">
+              <div class="info"><a href="#">Pizza</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Indian Kabab</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Toa Heftiba</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Daria Shevtsova</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Beef Burger</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 p-3">
+          <div class="box">
+            <h3 class="pb-2">Others</h3>
+            <div class="line">
+              <div class="info"><a href="#">Cart</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Checkout</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Shop</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">FAQ</a></div>
+            </div>
+            <div class="line">
+              <div class="info"><a href="#">Team</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 p-3">
+          <div class="box">
+            <h3 class="pb-2">Get in Touch</h3>
+            <div class="line">
+              <div class="info">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                1294 Mockingbird Hill,NYC
+              </div>
+            </div>
+            <div class="line">
+              <div class="info">
+                <i class="fa-solid fa-envelope"></i>
+                hello@yourmail.com
+              </div>
+            </div>
+            <div class="line">
+              <div class="info">
+                <span>
+                  <i class="fas fa-phone-volume fa-fw"></i>
+                  +www.yourdomainname.com</span
+                >
+              </div>
+            </div>
+            <ul class="social">
+              <li>
+                <a href="#" class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="facebook">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="facebook">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="facebook">
+                  <i class="fa-brands fa-dribbble"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        © 2022 FoodFly Mohamed Mahmoud Theme - All Rights Reserved Made by Mo
+        Esmail
+      </p>
+    </div>
+    <!-- End footer (5) -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper-bundle -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <!-- script js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
