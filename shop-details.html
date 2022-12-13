@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- START TITLE -->
     <title>Food Fly</title>
-    <link rel="icon" href="imgs/logo.svg" />
+    <link rel="icon" href="imgs/logo2.svg" />
     <!-- End TITLE -->
   </head>
 
@@ -48,9 +48,10 @@
                 <a class="link-item" href="index.html">Home</a>
               </li>
               <li class="dropdown">
-                <a class="link-item" href="#"
-                  >Menu <i class="fa-solid fa-angle-down"></i
-                ></a>
+                <a class="link-item" href="#"></a>
+                  Menu
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
                 <div class="dropdown-manu">
                   <ul>
                     <li><a href="menu.html">Menu</a></li>
@@ -59,9 +60,10 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a class="link-item" href="#"
-                  >Shop <i class="fa-solid fa-angle-down"></i
-                ></a>
+                <a class="link-item" href="#">
+                  Shop
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
                 <div class="dropdown-manu">
                   <ul>
                     <li><a href="shop.html">Shop</a></li>
@@ -70,9 +72,10 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a class="link-item" href="#"
-                  >Pages <i class="fa-solid fa-angle-down"></i
-                ></a>
+                <a class="link-item" href="#">
+                  Pages
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
                 <div class="dropdown-manu">
                   <ul>
                     <li><a href="about-us.html">About Us</a></li>
@@ -93,7 +96,8 @@
             <ul>
               <li><i class="search fa fa-search fa-lg"></i></li>
               <li>
-                <i class="shopping icon-cart fa fa-cart-plus fa-lg"></i>Cart (0)
+                <i class="shopping icon-cart fa fa-cart-plus fa-lg"></i>
+                Cart (0)
               </li>
               <label>Online Order</label>
             </ul>
@@ -107,8 +111,10 @@
     <div class="about-us-text mb-4">
       <h1>Shop</h1>
       <p>
-        <a href="index.html">Home</a> <span>></span>
-        <a href="shop.html">Shop</a> <span>></span>
+        <a href="index.html">Home</a>
+        <span>></span>
+        <a href="shop.html">Shop</a>
+        <span>></span>
         <a href="shop.html">Product Details</a>
       </p>
     </div>
@@ -122,15 +128,15 @@
           <div class="all-mySlides">
             <div class="container">
               <div class="mySlides">
-                <img src="imgs/500.png" style="width: 100%" />
+                <img src="imgs/500.png" style="width: 100%;" />
               </div>
 
               <div class="mySlides">
-                <img src="imgs/501.png" style="width: 100%" />
+                <img src="imgs/501.png" style="width: 100%;" />
               </div>
 
               <div class="mySlides">
-                <img src="imgs/502.png" style="width: 100%" />
+                <img src="imgs/502.png" style="width: 100%;" />
               </div>
 
               <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -141,7 +147,7 @@
                   <img
                     class="demo cursor"
                     src="imgs/500.png"
-                    style="width: 100%"
+                    style="width: 100%;"
                     onclick="currentSlide(1)"
                     alt="The Woods"
                   />
@@ -151,7 +157,7 @@
                   <img
                     class="demo cursor"
                     src="imgs/501.png"
-                    style="width: 100%"
+                    style="width: 100%;"
                     onclick="currentSlide(2)"
                     alt="Cinque Terre"
                   />
@@ -160,7 +166,7 @@
                   <img
                     class="demo cursor"
                     src="imgs/502.png"
-                    style="width: 100%"
+                    style="width: 100%;"
                     onclick="currentSlide(3)"
                     alt="Mountains and fjords"
                   />
@@ -169,37 +175,37 @@
             </div>
 
             <script>
-              let slideIndex = 1;
-              showSlides(slideIndex);
+              let slideIndex = 1
+              showSlides(slideIndex)
 
               function plusSlides(n) {
-                showSlides((slideIndex += n));
+                showSlides((slideIndex += n))
               }
 
               function currentSlide(n) {
-                showSlides((slideIndex = n));
+                showSlides((slideIndex = n))
               }
 
               function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("demo");
-                let captionText = document.getElementById("caption");
+                let i
+                let slides = document.getElementsByClassName('mySlides')
+                let dots = document.getElementsByClassName('demo')
+                let captionText = document.getElementById('caption')
                 if (n > slides.length) {
-                  slideIndex = 1;
+                  slideIndex = 1
                 }
                 if (n < 1) {
-                  slideIndex = slides.length;
+                  slideIndex = slides.length
                 }
                 for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
+                  slides[i].style.display = 'none'
                 }
                 for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
+                  dots[i].className = dots[i].className.replace(' active', '')
                 }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                captionText.innerHTML = dots[slideIndex - 1].alt;
+                slides[slideIndex - 1].style.display = 'block'
+                dots[slideIndex - 1].className += ' active'
+                captionText.innerHTML = dots[slideIndex - 1].alt
               }
             </script>
           </div>
@@ -214,9 +220,12 @@
             <i class="filled fas fa-star"></i>
             <i class="filled fas fa-star"></i>
             <i class="rate filled fas fa-star"></i>
-            <span> (02 Reviews)</span>
+            <span>(02 Reviews)</span>
           </div>
-          <p class="food-details-price"><span>$7.99</span> $5.99</p>
+          <p class="food-details-price">
+            <span>$7.99</span>
+            $5.99
+          </p>
           <hr />
           <p>
             Quisque rutrum. Aenean imperdiet ultricies nisi Quisque rutrum.
@@ -226,16 +235,23 @@
           <h6>portion size - 500 g</h6>
           <h6>Availability in Foodfly</h6>
           <div class="product-number">
-            <button class="conter-Product">
-              <span>-</span>
-              <span>01</span>
-              <span>+</span>
-            </button>
+            <div class="conter-Product">
+              <span class="minus"><i class="fa-solid fa-minus"></i></span>
+              <span class="num">01</span>
+              <span class="plus"><i class="fa-solid fa-plus"></i></span>
+            </div>
+           
             <button class="add-cart-details">Add to cart</button>
           </div>
           <hr />
-          <p class="fffffffffffffff">SKU: <span>Food-colacdps</span></p>
-          <p class="fffffffffffffff">categories: <span>Product</span></p>
+          <p class="fffffffffffffff">
+            SKU:
+            <span>Food-colacdps</span>
+          </p>
+          <p class="fffffffffffffff">
+            categories:
+            <span>Product</span>
+          </p>
         </div>
       </div>
     </div>
@@ -258,7 +274,7 @@
       </div>
 
       <!-- Description -->
-      <div id="Description" class="tabcontent" style="display: block">
+      <div id="Description" class="tabcontent" style="display: block;">
         <p>
           Gourmet burger with arugula, feta cheese, quail eggs and juicy cutlet
           made from selected beef. Served with sweet corn and cream barbecue
@@ -285,20 +301,23 @@
                               </div>
                               <h3>Italian Pasta</h3>
                               <div class="ratings">
-                                <i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="rate fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="rate fa fa-star"></i>
                               </div>
                               <p>
                                 Quisque rutrum. Aenean imperdiet ultricies nisi
                               </p>
-                              <h5><span> $5.99 </span> $7.99</h5>
-                              <label class="filled-shopping"
-                                ><i class="fa-solid fa-cart-shopping"></i> Add
-                                To Card</label
-                              >
+                              <h5>
+                                <span>$5.99</span>
+                                $7.99
+                              </h5>
+                              <label class="filled-shopping">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Card
+                              </label>
                             </div>
                           </div>
                         </div>
@@ -311,20 +330,23 @@
                               </div>
                               <h3>Italian Pasta</h3>
                               <div class="ratings">
-                                <i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="rate fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="rate fa fa-star"></i>
                               </div>
                               <p>
                                 Quisque rutrum. Aenean imperdiet ultricies nisi
                               </p>
-                              <h5><span> $5.99 </span> $7.99</h5>
-                              <label class="filled-shopping"
-                                ><i class="fa-solid fa-cart-shopping"></i> Add
-                                To Card</label
-                              >
+                              <h5>
+                                <span>$5.99</span>
+                                $7.99
+                              </h5>
+                              <label class="filled-shopping">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Card
+                              </label>
                             </div>
                           </div>
                         </div>
@@ -337,20 +359,23 @@
                               </div>
                               <h3>Italian Pasta</h3>
                               <div class="ratings">
-                                <i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="rate fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="rate fa fa-star"></i>
                               </div>
                               <p>
                                 Quisque rutrum. Aenean imperdiet ultricies nisi
                               </p>
-                              <h5><span> $5.99 </span> $7.99</h5>
-                              <label class="filled-shopping"
-                                ><i class="fa-solid fa-cart-shopping"></i> Add
-                                To Card</label
-                              >
+                              <h5>
+                                <span>$5.99</span>
+                                $7.99
+                              </h5>
+                              <label class="filled-shopping">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Card
+                              </label>
                             </div>
                           </div>
                         </div>
@@ -363,20 +388,23 @@
                               </div>
                               <h3>Italian Pasta</h3>
                               <div class="ratings">
-                                <i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="fa fa-star"></i
-                                ><i class="rate fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="rate fa fa-star"></i>
                               </div>
                               <p>
                                 Quisque rutrum. Aenean imperdiet ultricies nisi
                               </p>
-                              <h5><span> $5.99 </span> $7.99</h5>
-                              <label class="filled-shopping"
-                                ><i class="fa-solid fa-cart-shopping"></i> Add
-                                To Card</label
-                              >
+                              <h5>
+                                <span>$5.99</span>
+                                $7.99
+                              </h5>
+                              <label class="filled-shopping">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Add To Card
+                              </label>
                             </div>
                           </div>
                         </div>
@@ -602,8 +630,8 @@
               <div class="info">
                 <span>
                   <i class="fas fa-phone-volume fa-fw"></i>
-                  +www.yourdomainname.com</span
-                >
+                  +www.yourdomainname.com
+                </span>
               </div>
             </div>
             <ul class="social">
@@ -653,18 +681,52 @@
     <script src="js/main.js"></script>
     <script>
       function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
+        var i, tabcontent, tablinks
+        tabcontent = document.getElementsByClassName('tabcontent')
         for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+          tabcontent[i].style.display = 'none'
         }
-        tablinks = document.getElementsByClassName("tablinks");
+        tablinks = document.getElementsByClassName('tablinks')
         for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
+          tablinks[i].className = tablinks[i].className.replace(' active', '')
         }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+        document.getElementById(cityName).style.display = 'block'
+        evt.currentTarget.className += ' active'
       }
+
+      let plus = document.querySelector('.plus')
+      let minus = document.querySelector('.minus')
+      let num = document.querySelector('.num')
+      let a = 0
+
+      plus.addEventListener("click", ()=>{
+        a++
+        a = (a < 10)? "0" + a : a
+        num.innerText = a
+      })
+
+       minus.addEventListener("click", ()=>{
+        if (a > 0) {
+          a--
+          a = (a < 10)? "0" + a : a
+          num.innerText = a
+         }
+      })
+
+  
+                
+                
+         
+      // let count = 0
+      // function increment() {
+      //   count = count + 1
+      //   document.getElementById('h1').innerText = count
+      // }
+      // function dcrement() {
+      //   count = count - 1
+      //   document.getElementById('h').innerText = count
+      // }
     </script>
+
   </body>
 </html>

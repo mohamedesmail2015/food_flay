@@ -17,7 +17,7 @@ html {
 }
 body {
   background-color: var(--background-color);
-  font-family: "Cairo", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 a {
   text-decoration: none;
@@ -1053,7 +1053,7 @@ ul {
   justify-content: center;
 }
 
-.photo img {
+.photo .photo-imgs img {
   height: 200px;
   width: 200px;
   margin: 10px;
@@ -1846,7 +1846,7 @@ a {
 }
 
 .story-about p::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 10px;
   height: 10px;
@@ -1857,7 +1857,7 @@ a {
 }
 
 .story-about .yellow::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 10px;
   height: 10px;
@@ -3323,7 +3323,7 @@ img {
 }
 
 .all-mySlides .roww:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -3383,12 +3383,12 @@ img {
 }
 
 .food-details h6::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 10px;
   height: 10px;
   left: 0;
-  top: 18px;
+  top: 16px;
   border-radius: 50%;
   background-color: var(--main-color);
 }
@@ -3413,18 +3413,31 @@ img {
   text-decoration: line-through;
 }
 
-.conter-Product span {
-  margin: 7px;
+.product-number {
+  display: flex;
+  text-align: start;
+  justify-content: start;
 }
 
 .conter-Product {
   color: var(--black-color);
-  margin: 10px auto;
+  margin: 10px;
   padding: 7px 15px;
   border-radius: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
   background-color: #f0f0f0;
   border: solid 2px #f0f0f0;
   transition: var(--main-transition);
+}
+
+.conter-Product .minus,
+.conter-Product .plus {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  color: var(--black-color);
 }
 
 .add-cart-details {
@@ -3851,12 +3864,15 @@ img {
   margin: 0 10px 0;
 }
 
-.price-tbody p {
+.price-tbody button {
   font-size: 13px;
+  border: none;
+  outline: none;
   color: var(--main-color);
+  background-color: #f6f6f6;
 }
 
-.price-tbody p i {
+.price-tbody button i {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -3896,6 +3912,17 @@ img {
   flex-wrap: wrap;
   text-align: center;
   justify-content: space-between;
+}
+
+.all-Code .apply-cupon span {
+  width: fit-content;
+  font-size: 12px;
+  padding: 7px 20px;
+  border-radius: 25px;
+  border: solid 1px #797575;
+  color: #797575;
+  transition: var(--main-transition);
+  background-color: var(--background-color);
 }
 
 .all-Code .apply-cupon button,
@@ -4120,7 +4147,7 @@ hr {
 }
 
 .blog-data h3 {
-  margin: 30px 10px;
+  margin: 10px;
   font-size: 14px;
   display: flex;
   flex-wrap: wrap;
@@ -4130,11 +4157,13 @@ hr {
 }
 
 .blog-data h3 p {
-  margin: 0 10px 10px 0;
+  color: var(--black-color);
+  padding: 5px 10px 0 5px;
 }
 
 .blog-data h3 i {
-  margin: auto 5px auto auto;
+  color: var(--main-color);
+  padding: 5px 10px 5px 0;
 }
 
 .all-blog h1 {
@@ -4144,9 +4173,20 @@ hr {
 }
 
 .all-blog h4 {
-  padding-top: 15px;
-  font-size: 17px;
+  padding-top: 12px;
+  font-size: 16px;
   color: #3a3a3a;
+}
+
+.all-blog h6 {
+  padding: 20px 0 30px 0;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+.all-blog h6 i {
+  font-weight: bold;
+  color: var(--black-color);
 }
 
 .imgs-blog {
@@ -4344,6 +4384,7 @@ hr {
 .Blog-form {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #f0f0f0;
   border-radius: 10px;
   box-shadow: 0 1px 1px #f0f0f0;
@@ -4352,10 +4393,11 @@ hr {
 .Blog-form form {
   display: flex;
   height: 40px;
-  width: 100%;
+  width: 90%;
   border-radius: 30px;
-  margin: 10px 20px;
-  padding: 0 15px;
+  margin: 10px 50px;
+  padding-right: 10px;
+  padding-left: 5px;
   border: 1px solid #d3d3d3;
   background-color: #fff;
 }
@@ -4423,32 +4465,101 @@ hr {
   margin-bottom: 20px;
 }
 
+.recent-posts {
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
 .blog-recent {
-  margin: 20px 0;
+  margin: 20px 5px;
   display: flex;
   text-align: start;
   justify-content: start;
 }
 
 .blog-recent img {
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
   border-radius: 10px;
 }
 
 .blog-recent .text-recent p {
-  margin: 7px;
-  font-size: 14px;
+  margin: 0 7px;
+  font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .blog-recent .text-recent span {
-  margin: 10px;
+  font-size: 14px;
+  margin: 5px 10px;
 }
 
-.blog-recent .text-recent span i {
-  font-size: 10px;
+
+
+
+
+
+
+
+
+
+
+.blog-category{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 1px 1px #f0f0f0;
 }
+
+.blog-category h3 {
+  padding: 10px;
+  margin: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--black-color);
+}
+
+.blog-category p {
+  position: relative;
+  cursor: pointer;
+  color: #6e7984;
+  padding: 10px 15px 0;
+  margin: 10px 20px;
+  font-size: 16px;
+}
+
+.blog-category p:hover {
+  color: var(--main-color);
+}
+
+.blog-category p::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  left: 0;
+  top: 18px;
+  border-radius: 50%;
+  background-color: #6e7984;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .blog-tags,
 .all-species-food {
