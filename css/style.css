@@ -149,7 +149,7 @@ button:focus {
   background: var(--white);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .navbar-part {
     display: none;
   }
@@ -1467,14 +1467,15 @@ button:focus {
   color: var(--main-color);
 }
 
-.article-box .box .content h3 {
+.article-box .box .content a h3 {
   margin: 10px 0;
   font-size: 22px;
   font-weight: bold;
   line-height: 1.5;
+  color: var(--black-color);
 }
 
-.article-box .box .content h3:hover {
+.article-box .box .content a h3:hover {
   color: var(--main-color);
   cursor: pointer;
 }
@@ -2704,7 +2705,6 @@ a {
 .all-events {
   opacity: 0.9;
   padding: 50px 0;
-
   background-color: #318d32;
 }
 
@@ -2742,7 +2742,7 @@ a {
   border-radius: 50px;
   border: none;
   flex: 1;
-  caret-color: var(--main-color);
+  background-color: var(--white);
 }
 
 @media (max-width: 767px) {
