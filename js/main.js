@@ -1,3 +1,123 @@
+// HEADER
+//========================================
+//          HEADER SCROLL FIXED
+//========================================
+$(window).on('scroll', function () {
+  var scrolling = $(this).scrollTop()
+  // console.log(scrolling)
+  if (scrolling > 130) {
+    $('.header-part').addClass('active')
+  } else {
+    $('.header-part').removeClass('active')
+  }
+})
+
+//========================================
+//        DROPDOWN MENU FUNCTION
+//========================================
+$(function () {
+  $('.dropdown-link').click(function () {
+    $(this).next().toggle()
+    $(this).toggleClass('active')
+    if ($('.dropdown-list:visible').length > 1) {
+      $('.dropdown-list:visible').hide()
+      $(this).next().show()
+      $('.dropdown-link').removeClass('active')
+      $(this).addClass('active')
+    }
+  })
+})
+
+//========================================
+//       NAV SIDEBAR MENU ACTIVE
+//========================================
+$('.nav-link').on('click', function () {
+  $('.nav-list li a').removeClass('active')
+  $(this).addClass('active')
+})
+
+//========================================
+//        CATEGORY SIDEBAR FUNCTION
+//========================================
+$('.header-cate, .cate-btn').on('click', function () {
+  $('body').css('overflow', 'hidden')
+  $('.category-sidebar').addClass('active')
+  $('.category-close').on('click', function () {
+    $('body').css('overflow', 'inherit')
+    $('.category-sidebar').removeClass('active')
+    $('.backdrop').fadeOut()
+  })
+})
+
+//========================================
+//         NAV SIDEBAR FUNCTION
+//========================================
+$('.header-user').on('click', function () {
+  $('body').css('overflow', 'hidden')
+  $('.nav-sidebar').addClass('active')
+  $('.nav-close').on('click', function () {
+    $('body').css('overflow', 'inherit')
+    $('.nav-sidebar').removeClass('active')
+    $('.backdrop').fadeOut()
+  })
+})
+
+//========================================
+//         CART SIDEBAR FUNCTION
+//========================================
+$('.header-cart, .cart-btn').on('click', function () {
+  $('body').css('overflow', 'hidden')
+  $('.cart-sidebar').addClass('active')
+  $('.cart-close').on('click', function () {
+    $('body').css('overflow', 'inherit')
+    $('.cart-sidebar').removeClass('active')
+    $('.backdrop').fadeOut()
+  })
+})
+
+//========================================
+//       BACKDROP SIDEBAR FUNCTION
+//========================================
+$('.header-user, .header-cart, .header-cate, .cart-btn, .cate-btn').on(
+  'click',
+  function () {
+    $('.backdrop').fadeIn()
+
+    $('.backdrop').on('click', function () {
+      $(this).fadeOut()
+      $('body').css('overflow', 'inherit')
+      $('.nav-sidebar').removeClass('active')
+      $('.cart-sidebar').removeClass('active')
+      $('.category-sidebar').removeClass('active')
+    })
+  },
+)
+
+//========================================
+//       COUPON FORM FUNCTION
+//========================================
+$('.coupon-btn').on('click', function () {
+  $(this).hide()
+  $('.coupon-form').css('display', 'flex')
+})
+
+//========================================
+//       RESPONSIVE SEARCH BAR
+//========================================
+$('.header-src').on('click', function () {
+  $('.header-form').toggleClass('active')
+  $(this).children('.fa-search').toggleClass('fa-times')
+})
+
+//========================================
+//       WISH ICON ACTIVE FUNCTION
+//========================================
+$('.wish').on('click', function () {
+  $(this).toggleClass('active')
+})
+
+// **************************************************
+
 // Start Our Item's Tab (5)
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks
